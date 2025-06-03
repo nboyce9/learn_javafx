@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Line;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -27,7 +28,15 @@ public class HelloApplication extends Application {
         text.setFont(Font.font("Verdana", 50));
         text.setFill(Color.PURPLE);
 
+        Line line = new Line();//creating a horizontal line
+        line.setStartX(0);
+        line.setStartY(100);
+        line.setEndX(600);
+        line.setEndY(100);
+
+
         root.getChildren().add(text);
+        root.getChildren().add(line);
         stage.setScene(scene);
         stage.show();
     }
