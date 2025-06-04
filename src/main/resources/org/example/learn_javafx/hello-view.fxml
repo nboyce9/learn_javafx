@@ -2,7 +2,7 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
+<?import javafx.scene.shape.*?>
 
 <VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.learn_javafx.HelloController">
    <children>
@@ -13,6 +13,7 @@
             <Button fx:id="rightClick" layoutX="22.0" layoutY="180.0" mnemonicParsing="false" onAction="#onRightpClick" text="Right" />
             <Button fx:id="downClick" layoutX="270.0" layoutY="360.0" mnemonicParsing="false" onAction="#onDownClick" text="Down" />
             <Button fx:id="leftCilick" layoutX="526.0" layoutY="180.0" mnemonicParsing="false" onAction="#onLeftClick" text="Left" />
+            <Circle fx:id="circle" fill="DODGERBLUE" layoutX="270.0" layoutY="193.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
          </children>
       </AnchorPane>
    </children>

@@ -18,12 +18,12 @@ public class HelloController {
         circle.setCenterY(y+=1);
     }
     public void onLeftClick(ActionEvent e){
-        System.out.println("LEFT");
+        circle.setCenterX(x+=1);
     }
     public void onDownClick(ActionEvent e){
-        System.out.println("DOWN");
+        circle.setCenterY(y-=1);
     }
     public void onRightpClick(ActionEvent e){
-        System.out.println("RIGHT");
+        circle.setCenterX(x+=1);
     }
 }
