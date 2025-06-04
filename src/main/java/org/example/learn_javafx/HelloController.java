@@ -15,15 +15,15 @@ public class HelloController {
     private double x;
 
     public void onUpClick(ActionEvent e){
-        circle.setCenterY(y+=1);
+        circle.setCenterY(y-=15);
     }
     public void onLeftClick(ActionEvent e){
-        circle.setCenterX(x+=1);
+        circle.setCenterX(x+=15);
     }
     public void onDownClick(ActionEvent e){
-        circle.setCenterY(y-=1);
+        circle.setCenterY(y+=15);
     }
-    public void onRightpClick(ActionEvent e){
-        circle.setCenterX(x+=1);
+    public void onRightClick(ActionEvent e){
+        circle.setCenterX(x-=15);
     }
 }
