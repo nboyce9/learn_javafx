@@ -4,11 +4,16 @@
 <?import javafx.scene.layout.*?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.learn_javafx.HelloController">
    <children>
-      <Button layoutX="262.0" layoutY="8.0" mnemonicParsing="false" text="Up" />
-      <Button layoutX="22.0" layoutY="180.0" mnemonicParsing="false" text="Right" />
-      <Button layoutX="270.0" layoutY="360.0" mnemonicParsing="false" text="Down" />
-      <Button layoutX="526.0" layoutY="180.0" mnemonicParsing="false" text="Left" />
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         
+      <children>
+            <Button fx:id="upClick" layoutX="262.0" layoutY="8.0" mnemonicParsing="false" onAction="#onUpClick" text="Up" />
+            <Button fx:id="rightClick" layoutX="22.0" layoutY="180.0" mnemonicParsing="false" onAction="#onRightpClick" text="Right" />
+            <Button fx:id="downClick" layoutX="270.0" layoutY="360.0" mnemonicParsing="false" onAction="#onDownClick" text="Down" />
+            <Button fx:id="leftCilick" layoutX="526.0" layoutY="180.0" mnemonicParsing="false" onAction="#onLeftClick" text="Left" />
+         </children>
+      </AnchorPane>
    </children>
-</AnchorPane>
+</VBox>
