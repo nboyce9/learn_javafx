@@ -11,6 +11,7 @@ module org.example.learn_javafx {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires javafx.graphics;
+    requires javafx.base;
 
     opens org.example.learn_javafx to javafx.fxml;
     exports org.example.learn_javafx;
