@@ -2,10 +2,19 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.learn_javafx.SceneController">
-   <children>
-      <Label layoutX="275.0" layoutY="104.0" text="Label" />
-   </children>
-</AnchorPane>
+<VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.learn_javafx.SceneController">
+   <AnchorPane prefHeight="400.0" prefWidth="600.0">
+      <Button fx:id="switch1" alignment="CENTER" layoutX="270.0" layoutY="187.0" mnemonicParsing="false" onAction="#switchToScene2" opacity="0.72" text="Button" textFill="#186b29">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="greeting" alignment="CENTER" layoutX="226.0" layoutY="57.0" text="THIS IS SCENE 1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+</VBox>
