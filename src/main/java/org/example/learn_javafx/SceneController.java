@@ -1,5 +1,5 @@
 package org.example.learn_javafx;
 
-public class SceneController {
+public class SceneController{
 
 }

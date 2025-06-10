@@ -10,6 +10,7 @@ module org.example.learn_javafx {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires javafx.graphics;
 
     opens org.example.learn_javafx to javafx.fxml;
     exports org.example.learn_javafx;
