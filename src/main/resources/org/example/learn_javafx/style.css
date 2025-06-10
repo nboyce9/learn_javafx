@@ -2,9 +2,8 @@
 .root{
     -fx-background-color: #111111;
 }
-#upClick{
+.button{
     -fx-background-color: #345678;
     -fx-font-size: 18;
-}
-
+    -fx-text-fill: "white";
 }
