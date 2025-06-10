@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="CONTROLLER_NAME"
-            prefHeight="400.0" prefWidth="600.0">
 
-</AnchorPane>
+<VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.learn_javafx.SceneController">
+    <AnchorPane prefHeight="400.0" prefWidth="600.0">
+        <Button fx:id="switch2" alignment="CENTER" layoutX="270.0" layoutY="187.0" mnemonicParsing="false"
+                onAction="#switchToScene1" text="Button" textFill="#d30707">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Button>
+        <Label fx:id="greeting" alignment="CENTER" contentDisplay="CENTER" layoutX="227.0" layoutY="62.0"
+               text="THIS IS SCENE 2">
+            <font>
+                <Font name="System Bold Italic" size="24.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+</VBox>
