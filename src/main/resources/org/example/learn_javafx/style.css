@@ -1,0 +1,10 @@
+
+.root{
+    -fx-background-color: #111111;
+}
+#upClick{
+    -fx-background-color: #345678;
+    -fx-font-size: 18;
+}
+
+}
