@@ -20,6 +20,7 @@ public class HelloApplication extends Application {
 //        Scene scene = new Scene(root, 600, 600, Color.MEDIUMPURPLE); //A scene is a drawing surface for content and a container for nodes
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setTitle("Greeting");
 
         stage.setScene(scene);
