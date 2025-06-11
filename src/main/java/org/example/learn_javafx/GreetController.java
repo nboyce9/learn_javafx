@@ -13,7 +13,7 @@ public class GreetController {
     @FXML
     Label greetingLabel;
     @FXML
-    AnchorPane scenePane;
+    AnchorPane rootScene2;
     Stage stage;
 
     public void greet(String name){
@@ -27,7 +27,7 @@ public class GreetController {
         alert.setContentText("Do you want save yor work before exiting?: ");
 
         if(alert.showAndWait().get() == ButtonType.OK){
-            stage =(Stage) scenePane.getScene().getWindow();
+            stage =(Stage) rootScene2.getScene().getWindow();
             System.out.println("logged out");
             stage.close();
         }
