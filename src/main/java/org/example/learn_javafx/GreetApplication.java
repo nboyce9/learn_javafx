@@ -30,7 +30,6 @@ public class GreetApplication extends Application {
         alert.setContentText("Do you want save yor work before exiting?: ");
 
         if (alert.showAndWait().get() == ButtonType.OK) {
-            System.out.println("logged out");
             stage.close();
         }
     }
