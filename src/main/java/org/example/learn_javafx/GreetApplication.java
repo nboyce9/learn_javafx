@@ -1,9 +1,12 @@
 package org.example.learn_javafx;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
 
 public class GreetApplication extends Application {
@@ -14,5 +17,17 @@ public class GreetApplication extends Application {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void logout(Stage stage) {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Logout");
+        alert.setHeaderText("You're about to logout!");
+        alert.setContentText("Do you want save yor work before exiting?: ");
+
+        if (alert.showAndWait().get() == ButtonType.OK) {
+            System.out.println("logged out");
+            stage.close();
+        }
     }
 }
