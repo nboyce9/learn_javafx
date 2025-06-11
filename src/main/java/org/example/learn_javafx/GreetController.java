@@ -26,7 +26,11 @@ public class GreetController {
         alert.setHeaderText("You're about to logout!");
         alert.setContentText("Do you want save yor work before exiting?: ");
 
-
+        if(alert.showAndWait().get() == ButtonType.OK){
+            stage =(Stage) scenePane.getScene().getWindow();
+            System.out.println("logged out");
+            stage.close();
+        }
     }
 
 }
