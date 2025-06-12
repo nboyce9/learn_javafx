@@ -9,6 +9,7 @@ public class ImgViewController {
 
     @FXML
     ImageView imgView;
+    @FXML
     Button switchBtn;
 
     Image img = new Image(getClass().getResourceAsStream("pinksmoke.jpg"));

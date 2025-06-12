@@ -7,7 +7,7 @@
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.learn_javafx.ImgViewController">
     <AnchorPane prefHeight="404.0" prefWidth="600.0">
         <children>
-          <Button fx:id="switchBtn" layoutX="270.0" layoutY="335.0" mnemonicParsing="false" text="Switch" textFill="#f50a91" />
+          <Button fx:id="switchBtn" layoutX="270.0" layoutY="335.0" mnemonicParsing="false" onAction="#displayImg" text="Switch" textFill="#f50a91" />
           <ImageView fx:id="imgView" fitHeight="150.0" fitWidth="200.0" layoutX="199.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
             <image>
                <Image url="@blacksmoke.jpg" />
