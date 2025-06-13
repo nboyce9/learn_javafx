@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.example.learn_javafx.SignupController"
-            prefHeight="400.0" prefWidth="600.0">
 
-</AnchorPane>
+<VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.learn_javafx.SignupController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="nameField" layoutX="109.0" layoutY="42.0" />
+            <TextField fx:id="ageField" layoutX="109.0" layoutY="90.0" prefHeight="26.0" prefWidth="70.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
