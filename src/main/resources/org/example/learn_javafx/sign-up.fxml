@@ -10,6 +10,14 @@
          <children>
             <TextField fx:id="nameField" layoutX="109.0" layoutY="42.0" />
             <TextField fx:id="ageField" layoutX="109.0" layoutY="90.0" prefHeight="26.0" prefWidth="70.0" />
+            <Label fx:id="nameLabel" layoutX="25.0" layoutY="46.0" text="Name: " />
+            <Label fx:id="ageLabel" layoutX="25.0" layoutY="94.0" text="Age:" />
+            <Label fx:id="ageChecker" layoutX="220.0" layoutY="94.0" text="   " textFill="#e80a0a" />
+            <DatePicker layoutX="109.0" layoutY="137.0" prefHeight="26.0" prefWidth="181.0" />
+            <Label fx:id="dobLabel" layoutX="23.0" layoutY="141.0" text="D.O.B:" />
+            <RadioButton layoutX="109.0" layoutY="256.0" mnemonicParsing="false" text="3" />
+            <RadioButton layoutX="231.0" layoutY="256.0" mnemonicParsing="false" text="RadioButton" />
+            <Label fx:id="genderLabel" layoutX="23.0" layoutY="256.0" text="Gender:" />
          </children>
       </AnchorPane>
    </children>
