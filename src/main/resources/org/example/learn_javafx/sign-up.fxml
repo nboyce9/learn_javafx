@@ -14,8 +14,11 @@
             <Label fx:id="ageChecker" layoutX="220.0" layoutY="94.0" text="   " textFill="#e80a0a" />
             <DatePicker layoutX="109.0" layoutY="137.0" prefHeight="26.0" prefWidth="181.0" />
             <Label fx:id="dobLabel" layoutX="23.0" layoutY="141.0" text="D.O.B:" />
-            <RadioButton fx:id="femaleLabel" layoutX="109.0" layoutY="256.0" mnemonicParsing="false" text="Female" />
-            <RadioButton fx:id="maleLabel" layoutX="231.0" layoutY="256.0" mnemonicParsing="false" text="Male" />
+            <RadioButton fx:id="femaleLabel" layoutX="109.0" layoutY="256.0" mnemonicParsing="false" text="Female">
+               <toggleGroup>
+                  <ToggleGroup fx:id="genderGroup" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="maleLabel" layoutX="231.0" layoutY="256.0" mnemonicParsing="false" text="Male" toggleGroup="$genderGroup" />
             <Label fx:id="genderLabel" layoutX="23.0" layoutY="256.0" text="Gender:" />
             <CheckBox fx:id="agree" layoutX="19.0" layoutY="306.0" mnemonicParsing="false" text="I agree" />
             <Label fx:id="agrmntChecker" layoutX="121.0" layoutY="306.0" prefHeight="18.0" prefWidth="19.0" text="  " textFill="#eb0909" />
