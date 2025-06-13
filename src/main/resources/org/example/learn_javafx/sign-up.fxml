@@ -3,7 +3,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.learn_javafx.SignupController">
    <children>
       <AnchorPane prefHeight="400.0" prefWidth="600.0">
@@ -18,6 +17,11 @@
             <RadioButton fx:id="femaleLabel" layoutX="109.0" layoutY="256.0" mnemonicParsing="false" text="Female" />
             <RadioButton fx:id="maleLabel" layoutX="231.0" layoutY="256.0" mnemonicParsing="false" text="Male" />
             <Label fx:id="genderLabel" layoutX="23.0" layoutY="256.0" text="Gender:" />
+            <CheckBox fx:id="agree" layoutX="19.0" layoutY="306.0" mnemonicParsing="false" text="I agree" />
+            <Label fx:id="agrmntChecker" layoutX="121.0" layoutY="306.0" prefHeight="18.0" prefWidth="19.0" text="  " textFill="#eb0909" />
+            <Button fx:id="submit" layoutX="255.0" layoutY="353.0" mnemonicParsing="false" text="Submit" />
+            <ColorPicker layoutX="108.0" layoutY="194.0" />
+            <Label fx:id="colorLabel" layoutX="26.0" layoutY="198.0" text="Color:" />
          </children>
       </AnchorPane>
    </children>
