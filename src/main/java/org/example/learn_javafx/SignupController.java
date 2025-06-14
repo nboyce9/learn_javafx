@@ -26,6 +26,13 @@ public class SignupController {
     CheckBox agree;
 
     public void submit(ActionEvent e){
+        checkName();
+        checkAge();
+        agreement();
+
+    }
+
+    private void checkName() {
         String name = nameField.getText();
 
         if (name.isEmpty()) {
@@ -33,8 +40,6 @@ public class SignupController {
         } else {
             nameChecker.setText(" ");
         }
-        checkAge();
-
     }
 
     private void checkAge() {
