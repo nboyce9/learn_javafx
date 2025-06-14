@@ -25,6 +25,7 @@
             <Button fx:id="submit" layoutX="255.0" layoutY="353.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
             <ColorPicker fx:id="colorPicker" layoutX="108.0" layoutY="194.0" />
             <Label fx:id="colorLabel" layoutX="26.0" layoutY="198.0" text="Color:" />
+            <Label fx:id="nameChecker" layoutX="301.0" layoutY="46.0" text="  " textFill="#eb0404" />
          </children>
       </AnchorPane>
    </children>

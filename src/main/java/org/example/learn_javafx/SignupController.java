@@ -24,8 +24,11 @@ public class SignupController {
 
     public void submit(ActionEvent e){
         String name = nameField.getText();
-        if(name.isEmpty()){
+
+        if (name.isEmpty()) {
             nameChecker.setText("Field can not be empty: ");
+        } else {
+            nameChecker.setText(" ");
         }
         checkAge();
 
@@ -40,7 +43,6 @@ public class SignupController {
             ageChecker.setText("Field can not contain letters/symbols: ");
         }
     }
-
 
     private Integer userAge(String age){
         return Integer.parseInt(age);
