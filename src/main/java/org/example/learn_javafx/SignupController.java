@@ -22,6 +22,9 @@ public class SignupController {
     @FXML
     RadioButton maleLabel, femaleLabel;
 
+    @FXML
+    CheckBox agree;
+
     public void submit(ActionEvent e){
         String name = nameField.getText();
 
@@ -46,5 +49,14 @@ public class SignupController {
 
     private Integer userAge(String age){
         return Integer.parseInt(age);
+    }
+
+    private void agreement(){
+        if(agree.isSelected()){
+            agrmntChecker.setText("ok");
+        }
+        else{
+            agrmntChecker.setText("Agree to the Ts&Cs: ");
+        }
     }
 }
