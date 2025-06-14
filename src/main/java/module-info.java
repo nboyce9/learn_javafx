@@ -12,6 +12,7 @@ module org.example.learn_javafx {
     requires com.almasb.fxgl.all;
     requires javafx.graphics;
     requires javafx.base;
+    requires java.desktop;
 
     opens org.example.learn_javafx to javafx.fxml;
     exports org.example.learn_javafx;

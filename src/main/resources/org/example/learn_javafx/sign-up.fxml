@@ -12,7 +12,7 @@
             <Label fx:id="nameLabel" layoutX="25.0" layoutY="46.0" text="Name: " />
             <Label fx:id="ageLabel" layoutX="25.0" layoutY="94.0" text="Age:" />
             <Label fx:id="ageChecker" layoutX="220.0" layoutY="94.0" text="   " textFill="#e80a0a" />
-            <DatePicker layoutX="109.0" layoutY="137.0" prefHeight="26.0" prefWidth="181.0" />
+            <DatePicker fx:id="datePicker" layoutX="109.0" layoutY="137.0" prefHeight="26.0" prefWidth="181.0" />
             <Label fx:id="dobLabel" layoutX="23.0" layoutY="141.0" text="D.O.B:" />
             <RadioButton fx:id="femaleLabel" layoutX="109.0" layoutY="256.0" mnemonicParsing="false" text="Female">
                <toggleGroup>
@@ -23,7 +23,7 @@
             <CheckBox fx:id="agree" layoutX="19.0" layoutY="306.0" mnemonicParsing="false" text="I agree" />
             <Label fx:id="agrmntChecker" layoutX="121.0" layoutY="306.0" prefHeight="18.0" prefWidth="19.0" text="  " textFill="#eb0909" />
             <Button fx:id="submit" layoutX="255.0" layoutY="353.0" mnemonicParsing="false" text="Submit" />
-            <ColorPicker layoutX="108.0" layoutY="194.0" />
+            <ColorPicker fx:id="colorPicker" layoutX="108.0" layoutY="194.0" />
             <Label fx:id="colorLabel" layoutX="26.0" layoutY="198.0" text="Color:" />
          </children>
       </AnchorPane>
