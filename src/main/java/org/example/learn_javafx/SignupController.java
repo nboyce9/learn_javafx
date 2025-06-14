@@ -11,7 +11,7 @@ public class SignupController {
     TextField nameField, ageField;
 
     @FXML
-    Label ageChecker, agrmntChecker;
+    Label ageChecker, agrmntChecker, nameChecker;
 
     @FXML
     ColorPicker colorPicker;
@@ -24,14 +24,11 @@ public class SignupController {
 
     public void submit(ActionEvent e){
         String name = nameField.getText();
+        if(name.isEmpty()){
+            nameChecker.setText("Field can not be empty: ");
+        }
         checkAge();
 
-        if(!name.isEmpty()){
-            System.out.println("Welcome " + name + "!!");
-        }
-        else{
-            System.out.println("Field can not be empty.");
-        }
     }
 
     private void checkAge() {
