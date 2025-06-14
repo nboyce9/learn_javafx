@@ -1,11 +1,9 @@
 package org.example.learn_javafx;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.ColorPicker;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.RadioButton;
+import javafx.scene.control.*;
 
-import java.awt.*;
 
 public class SignupController {
 
@@ -23,4 +21,26 @@ public class SignupController {
 
     @FXML
     RadioButton maleLabel, femaleLabel;
+
+    public void submit(ActionEvent e){
+        String name = nameField.getText();
+        try{
+            int age = userAge(ageField.getText());
+            ageChecker.setText("ok");
+
+        }catch (NumberFormatException nfe){
+            ageChecker.setText("Field can not contain letters/symbols: ");
+        }
+
+        if(!name.isEmpty()){
+            System.out.println("Welcome " + name + "!!");
+        }
+        else{
+            System.out.println("Field can not be empty.");
+        }
+    }
+
+    private Integer userAge(String age){
+        return Integer.parseInt(age);
+    }
 }
