@@ -24,13 +24,7 @@ public class SignupController {
 
     public void submit(ActionEvent e){
         String name = nameField.getText();
-        try{
-            int age = userAge(ageField.getText());
-            ageChecker.setText("ok");
-
-        }catch (NumberFormatException nfe){
-            ageChecker.setText("Field can not contain letters/symbols: ");
-        }
+        checkAge();
 
         if(!name.isEmpty()){
             System.out.println("Welcome " + name + "!!");
@@ -39,6 +33,17 @@ public class SignupController {
             System.out.println("Field can not be empty.");
         }
     }
+
+    private void checkAge() {
+        try{
+            int age = userAge(ageField.getText());
+            ageChecker.setText("ok");
+
+        }catch (NumberFormatException nfe){
+            ageChecker.setText("Field can not contain letters/symbols: ");
+        }
+    }
+
 
     private Integer userAge(String age){
         return Integer.parseInt(age);
