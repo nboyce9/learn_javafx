@@ -21,6 +21,8 @@ public class SignupController {
 
     @FXML
     RadioButton maleLabel, femaleLabel;
+    @FXML
+    ToggleGroup genderGroup;
 
     @FXML
     CheckBox agree;
@@ -29,6 +31,13 @@ public class SignupController {
         checkName();
         checkAge();
         agreement();
+        String gender = "";
+        if(femaleLabel.isSelected()){
+            gender = femaleLabel.getText();
+        }
+        else{
+            gender = maleLabel.getText();
+        }
 
     }
 
