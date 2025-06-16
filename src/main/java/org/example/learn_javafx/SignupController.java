@@ -31,33 +31,30 @@ public class SignupController {
         checkName();
         checkAge();
         agreement();
-        String gender = "";
-        if(femaleLabel.isSelected()){
-            gender = femaleLabel.getText();
-        }
-        else{
-            gender = maleLabel.getText();
-        }
+
 
     }
 
-    private void checkName() {
+    private boolean checkName() {
         String name = nameField.getText();
 
         if (name.isEmpty()) {
             nameChecker.setText("Field can not be empty: ");
+            return false;
         } else {
             nameChecker.setText(" ");
+            return true;
         }
     }
 
-    private void checkAge() {
+    private boolean checkAge() {
         try{
             int age = userAge(ageField.getText());
-            ageChecker.setText("ok");
+            return true;
 
         }catch (NumberFormatException nfe){
             ageChecker.setText("Field can not contain letters/symbols: ");
+            return false;
         }
     }
 
@@ -65,12 +62,26 @@ public class SignupController {
         return Integer.parseInt(age);
     }
 
-    private void agreement(){
+    private boolean agreement(){
         if(agree.isSelected()){
             agrmntChecker.setText("ok");
+            return true;
         }
         else{
             agrmntChecker.setText("Agree to the Ts&Cs: ");
+            return false;
+        }
+    }
+
+    private String getGender(){
+        if(femaleLabel.isSelected()){
+            return femaleLabel.getText();
+        }
+        else if(maleLabel.isSelected()){
+            return maleLabel.getText();
+        }
+        else {
+            return "";
         }
     }
 }
