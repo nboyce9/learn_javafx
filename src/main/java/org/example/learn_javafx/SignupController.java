@@ -3,17 +3,13 @@ package org.example.learn_javafx;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.paint.Color;
-
 
 public class SignupController {
 
     @FXML
     TextField nameField, ageField;
-
     @FXML
     Label ageChecker, agrmntChecker, nameChecker;
-
     @FXML
     ColorPicker colorPicker;
     @FXML
@@ -28,9 +24,6 @@ public class SignupController {
     Alert alert;
 
     public void submit(ActionEvent e){
-//        checkName();
-//        checkAge();
-//        agreement();
         if(checkName() && checkAge() && agreement()){
 
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Confirm the information is correct.");
