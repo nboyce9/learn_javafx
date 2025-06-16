@@ -34,17 +34,16 @@ public class SignupController {
         if(checkName() && checkAge() && agreement()){
 
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Confirm the information is correct.");
-            alert.showAndWait();
+            alert.setHeaderText("Confirm the Information is correct.");
             alert.setContentText("Name: " +nameField.getText() + "\n"+
                     "Age: " + userAge(ageField.getText()) +"\n"+
                     "DOB: "+ datePicker.getValue() +"\n"+
                     "Gender: "+ getGender() + "\n"+
                     "Color: "+ colorPicker.getValue());
+            alert.showAndWait();
 
             colorPicker.getValue();
         }
-
-
     }
 
     private boolean checkName() {
