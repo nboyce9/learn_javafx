@@ -3,6 +3,7 @@ package org.example.learn_javafx;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.paint.Color;
 
 
 public class SignupController {
@@ -15,22 +16,33 @@ public class SignupController {
 
     @FXML
     ColorPicker colorPicker;
-
     @FXML
     DatePicker datePicker;
-
     @FXML
     RadioButton maleLabel, femaleLabel;
     @FXML
     ToggleGroup genderGroup;
-
     @FXML
     CheckBox agree;
+    @FXML
+    Alert alert;
 
     public void submit(ActionEvent e){
-        checkName();
-        checkAge();
-        agreement();
+//        checkName();
+//        checkAge();
+//        agreement();
+        if(checkName() && checkAge() && agreement()){
+
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Confirm the information is correct.");
+            alert.showAndWait();
+            alert.setContentText("Name: " +nameField.getText() + "\n"+
+                    "Age: " + userAge(ageField.getText()) +"\n"+
+                    "DOB: "+ datePicker.getValue() +"\n"+
+                    "Gender: "+ getGender() + "\n"+
+                    "Color: "+ colorPicker.getValue());
+
+            colorPicker.getValue();
+        }
 
 
     }
